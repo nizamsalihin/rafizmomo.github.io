@@ -1,4 +1,30 @@
-body {
-  background-color: #2E2E2E;
+.navbar-rm-desktop {
+  padding: 17px 0px;
+}
+
+.navbar-rm-desktop .navbar-brand {
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  color: #F15025;
+}
+
+.navbar-rm-desktop .nav-link {
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 25px;
+  color: #2E2E2E;
+}
+
+.navbar-rm-desktop .nav-link:hover {
+  color: #191919;
+}
+
+.navbar-rm-desktop .active {
+  color: #F15025;
 }
 /*# sourceMappingURL=main.css.map */

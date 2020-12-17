@@ -1,5 +1,29 @@
-body {
-    background-color: #2E2E2E;
-}
+.navbar-rm-desktop {
+    padding: 17px 0px;
 
-//font-family: 'Source Sans Pro', sans-serif;
+    .navbar-brand {
+        font-family: Source Sans Pro;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 30px;
+        color: #F15025;
+    }
+
+    .nav-link {
+        font-family: Source Sans Pro;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 25px;
+        color: #2E2E2E;
+
+        &:hover {
+            color: #191919;
+        }
+    }
+
+    .active {
+        color: #F15025;
+    }
+}
