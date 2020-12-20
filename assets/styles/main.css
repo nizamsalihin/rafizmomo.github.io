@@ -1,5 +1,75 @@
-.navbar-rm-desktop {
-  padding: 17px 0px;
+.btn.btn-rm-primary {
+  text-decoration: none;
+  padding: 8px 16px;
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  border: 2px solid #F15025;
+  border-radius: 0;
+  color: #FFFFFF;
+  background-color: #F15025;
+}
+
+.btn.btn-rm-primary:hover {
+  border: 2px solid #F15025;
+  color: #F15025;
+  background-color: #FFFFFF;
+}
+
+.btn.btn-rm-primary.active {
+  border: 2px solid #F15025;
+  color: #F15025;
+  background-color: #FFFFFF;
+}
+
+.btn.btn-rm-primary.active:hover {
+  border: 2px solid #F8A892;
+  color: #F8A892;
+  background-color: #FFFFFF;
+}
+
+.btn.btn-rm-primary.disabled {
+  border: 2px solid #E6E8E6;
+  color: #CED0CE;
+  background-color: #E6E8E6;
+}
+
+.btn.btn-rm-secondary {
+  text-decoration: none;
+  padding: 8px 16px;
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  border: 2px solid #2E2E2E;
+  border-radius: 0;
+  color: #FFFFFF;
+  background-color: #2E2E2E;
+}
+
+.btn.btn-rm-secondary:hover {
+  border: 2px solid #2E2E2E;
+  color: #2E2E2E;
+  background-color: #FFFFFF;
+}
+
+.btn.btn-rm-secondary.active {
+  border: 2px solid #2E2E2E;
+  color: #2E2E2E;
+  background-color: #FFFFFF;
+}
+
+.btn.btn-rm-secondary.active:hover {
+  border: 2px solid #a1a1a1;
+  color: #a1a1a1;
+  background-color: #FFFFFF;
+}
+
+.btn.btn-rm-secondary.disabled {
+  border: 2px solid #E6E8E6;
+  color: #CED0CE;
+  background-color: #E6E8E6;
 }
 
 .navbar-rm-desktop .navbar-brand {
@@ -7,7 +77,6 @@
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
-  line-height: 30px;
   color: #F15025;
 }
 
@@ -16,15 +85,118 @@
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
-  line-height: 25px;
   color: #2E2E2E;
 }
 
 .navbar-rm-desktop .nav-link:hover {
-  color: #191919;
+  color: #F15025;
 }
 
-.navbar-rm-desktop .active {
+.navbar-rm-desktop .nav-link.active {
   color: #F15025;
+  font-weight: bold;
+}
+
+.navbar-rm-desktop .nav-link.active:hover {
+  color: #F15025;
+}
+
+.navbar-rm-desktop .nav-link.disabled {
+  color: #CED0CE;
+}
+
+.section-header-rm-desktop {
+  height: 698px;
+  background: #FFFFFF;
+}
+
+h1.text-rm-desktop {
+  font-family: Source Sans Pro;
+  font-size: 49px;
+  font-weight: 600;
+}
+
+h1.text-rm-mobile {
+  font-family: Source Sans Pro;
+  font-size: 29px;
+  font-weight: 600;
+}
+
+h2.text-rm-desktop {
+  font-family: Source Sans Pro;
+  font-size: 39px;
+  font-weight: 600;
+}
+
+h2.text-rm-mobile {
+  font-family: Source Sans Pro;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+h3.text-rm-desktop {
+  font-family: Source Sans Pro;
+  font-size: 31px;
+  font-weight: 600;
+}
+
+h3.text-rm-mobile {
+  font-family: Source Sans Pro;
+  font-size: 23px;
+  font-weight: 600;
+}
+
+h4.text-rm-desktop {
+  font-family: Source Sans Pro;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+h4.text-rm-mobile {
+  font-family: Source Sans Pro;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+h5.text-rm-desktop {
+  font-family: Source Sans Pro;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+h5.text-rm-mobile {
+  font-family: Source Sans Pro;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+h6.text-rm-desktop {
+  font-family: Source Sans Pro;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+h6.text-rm-mobile {
+  font-family: Source Sans Pro;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+p {
+  font-family: Source Sans Pro;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+small.text-rm-desktop {
+  font-family: Source Sans Pro;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+small.text-rm-mobile {
+  font-family: Source Sans Pro;
+  font-size: 14px;
+  font-weight: 400;
 }
 /*# sourceMappingURL=main.css.map */
