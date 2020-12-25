@@ -1,12 +1,135 @@
-.btn.btn-rm-primary {
-  text-decoration: none;
-  padding: 8px 16px;
+h1,
+h2,
+h3,
+.section-header-rm-desktop .header-name .button-header-name .button-social-media,
+h4,
+.navbar-brand,
+h5,
+.nav-link,
+h6,
+p,
+.btn,
+small,
+a {
   font-family: Source Sans Pro;
-  font-style: normal;
-  font-weight: normal;
+  color: #2E2E2E;
+}
+
+h1,
+h2,
+h3,
+.section-header-rm-desktop .header-name .button-header-name .button-social-media {
+  font-weight: 600;
+}
+
+
+h4,
+.navbar-brand,
+h5,
+.nav-link,
+h6,
+p,
+.btn,
+small,
+a {
+  font-weight: 400;
+}
+
+
+p,
+.btn {
   font-size: 16px;
-  border: 2px solid #F15025;
+  font-weight: 400;
+}
+
+a {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #F15025;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    margin-top: 0;
+    font-size: 2.488rem;
+  }
+  h2 {
+    font-size: 2.074rem;
+  }
+  
+  h3,
+  .section-header-rm-desktop .header-name .button-header-name .button-social-media {
+    font-size: 1.728rem;
+  }
+  
+  h4,
+  .navbar-brand {
+    font-size: 1.44rem;
+  }
+  
+  h5,
+  .nav-link {
+    font-size: 1.2rem;
+  }
+  small,
+  .text_small {
+    font-size: 0.833rem;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  h1 {
+    margin-top: 0;
+    font-size: 3.052rem;
+  }
+  h2 {
+    font-size: 2.441rem;
+  }
+  
+  h3,
+  .section-header-rm-desktop .header-name .button-header-name .button-social-media {
+    font-size: 1.953rem;
+  }
+  
+  h4,
+  .navbar-brand {
+    font-size: 1.563rem;
+  }
+  
+  h5,
+  .nav-link {
+    font-size: 1.25rem;
+  }
+  small,
+  .text_small {
+    font-size: 0.8rem;
+  }
+}
+
+.btn {
   border-radius: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .btn {
+    padding: 6px 12px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .btn {
+    padding: 8px 16px;
+  }
+}
+
+.btn.btn-rm-primary {
+  border: 2px solid #F15025;
   color: #FFFFFF;
   background-color: #F15025;
 }
@@ -36,14 +159,7 @@
 }
 
 .btn.btn-rm-secondary {
-  text-decoration: none;
-  padding: 8px 16px;
-  font-family: Source Sans Pro;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
   border: 2px solid #2E2E2E;
-  border-radius: 0;
   color: #FFFFFF;
   background-color: #2E2E2E;
 }
@@ -72,131 +188,81 @@
   background-color: #E6E8E6;
 }
 
-.navbar-rm-desktop .navbar-brand {
-  font-family: Source Sans Pro;
+.navbar-brand {
   font-style: normal;
   font-weight: 600;
-  font-size: 24px;
   color: #F15025;
 }
 
-.navbar-rm-desktop .nav-link {
-  font-family: Source Sans Pro;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
+.nav-link {
   color: #2E2E2E;
 }
 
-.navbar-rm-desktop .nav-link:hover {
+.nav-link:hover {
   color: #F15025;
 }
 
-.navbar-rm-desktop .nav-link.active {
+.nav-link.active {
   color: #F15025;
-  font-weight: bold;
+  font-weight: 600;
 }
 
-.navbar-rm-desktop .nav-link.active:hover {
+.nav-link.active:hover {
   color: #F15025;
 }
 
-.navbar-rm-desktop .nav-link.disabled {
+.nav-link.disabled {
   color: #CED0CE;
 }
 
 .section-header-rm-desktop {
-  height: 698px;
   background: #FFFFFF;
+  padding: 0px;
+  margin: 0px;
 }
 
-h1.text-rm-desktop {
-  font-family: Source Sans Pro;
-  font-size: 49px;
-  font-weight: 600;
+.section-header-rm-desktop .header-name {
+  margin: 301px 0px 0px 0px;
+  padding: 0px 0px 0px 40px;
 }
 
-h1.text-rm-mobile {
-  font-family: Source Sans Pro;
-  font-size: 29px;
-  font-weight: 600;
+.section-header-rm-desktop .header-name .button-header-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-h2.text-rm-desktop {
-  font-family: Source Sans Pro;
-  font-size: 39px;
-  font-weight: 600;
+.section-header-rm-desktop .header-name .button-header-name .button-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-h2.text-rm-mobile {
-  font-family: Source Sans Pro;
-  font-size: 26px;
-  font-weight: 600;
-}
-
-h3.text-rm-desktop {
-  font-family: Source Sans Pro;
-  font-size: 31px;
-  font-weight: 600;
-}
-
-h3.text-rm-mobile {
-  font-family: Source Sans Pro;
-  font-size: 23px;
-  font-weight: 600;
-}
-
-h4.text-rm-desktop {
-  font-family: Source Sans Pro;
+.section-header-rm-desktop .header-name .button-header-name .button-items .button-icon {
+  padding-bottom: 0px;
+  margin-right: 8px;
   font-size: 25px;
-  font-weight: 400;
+  line-height: 0px;
 }
 
-h4.text-rm-mobile {
-  font-family: Source Sans Pro;
-  font-size: 20px;
-  font-weight: 400;
+.section-header-rm-desktop .header-name .button-header-name .button-social-media {
+  text-decoration: none;
+  padding: 0px;
+  margin: 0px 5px 0px 0px;
 }
 
-h5.text-rm-desktop {
-  font-family: Source Sans Pro;
-  font-size: 20px;
-  font-weight: 400;
+.section-header-rm-desktop .header-name .button-header-name .button-social-media:hover {
+  color: #F15025;
 }
 
-h5.text-rm-mobile {
-  font-family: Source Sans Pro;
-  font-size: 18px;
-  font-weight: 400;
-}
-
-h6.text-rm-desktop {
-  font-family: Source Sans Pro;
-  font-size: 18px;
-  font-weight: 400;
-}
-
-h6.text-rm-mobile {
-  font-family: Source Sans Pro;
-  font-size: 17px;
-  font-weight: 400;
-}
-
-p {
-  font-family: Source Sans Pro;
-  font-size: 16px;
-  font-weight: 400;
-}
-
-small.text-rm-desktop {
-  font-family: Source Sans Pro;
-  font-size: 13px;
-  font-weight: 400;
-}
-
-small.text-rm-mobile {
-  font-family: Source Sans Pro;
-  font-size: 14px;
-  font-weight: 400;
+.section-header-rm-desktop .header-photo img {
+  margin-top: 60px;
+  max-height: 600px;
 }
 /*# sourceMappingURL=main.css.map */

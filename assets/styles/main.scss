@@ -1,16 +1,119 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+small,
+a {
+    font-family: Source Sans Pro;
+    color: #2E2E2E;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 600;
+}
+
+h4,
+h5,
+h6,
+p,
+small,
+a {
+    font-weight: 400;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+a {
+    font-size: 16px;
+    font-weight: 400;
+
+    &:hover {
+        text-decoration: none;
+        color: #F15025;
+        transition: 0.2s;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        margin-top: 0;
+        font-size: 2.488rem;
+    }
+
+    h2 {
+        font-size: 2.074rem;
+    }
+
+    h3 {
+        font-size: 1.728rem;
+    }
+
+    h4 {
+        font-size: 1.44rem;
+    }
+
+    h5 {
+        font-size: 1.2rem;
+    }
+
+    small,
+    .text_small {
+        font-size: 0.833rem;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    h1 {
+        margin-top: 0;
+        font-size: 3.052rem;
+    }
+
+    h2 {
+        font-size: 2.441rem;
+    }
+
+    h3 {
+        font-size: 1.953rem;
+    }
+
+    h4 {
+        font-size: 1.563rem;
+    }
+
+    h5 {
+        font-size: 1.25rem;
+    }
+
+    small,
+    .text_small {
+        font-size: 0.8rem;
+    }
+}
+
 .btn {
+    @extend p;
+
+    border-radius: 0;
+
+    @media screen and (max-width: 768px) {
+        padding: 6px 12px;
+    }
+
+    @media screen and (min-width: 769px) {
+        padding: 8px 16px;
+    }
 
     &.btn-rm-primary {
-        text-decoration: none;
-        padding: 8px 16px;
-
-        font-family: Source Sans Pro;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
 
         border: 2px solid #F15025;
-        border-radius: 0;
         color: #FFFFFF;
         background-color: #F15025;
 
@@ -41,16 +144,9 @@
     }
 
     &.btn-rm-secondary {
-        text-decoration: none;
-        padding: 8px 16px;
 
-        font-family: Source Sans Pro;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
 
         border: 2px solid #2E2E2E;
-        border-radius: 0;
         color: #FFFFFF;
         background-color: #2E2E2E;
 
@@ -80,152 +176,88 @@
         }
     }
 
+
 }
 
-.navbar-rm-desktop {
-    .navbar-brand {
-        font-family: Source Sans Pro;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 24px;
+.navbar-brand {
+    @extend h4;
+
+    font-style: normal;
+    font-weight: 600;
+    color: #F15025;
+
+}
+
+.nav-link {
+    @extend h5;
+    color: #2E2E2E;
+
+    &:hover {
         color: #F15025;
     }
 
-    .nav-link {
-        font-family: Source Sans Pro;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 20px;
-        color: #2E2E2E;
+    &.active {
+        color: #F15025;
+        font-weight: 600;
 
         &:hover {
             color: #F15025;
         }
-
-        &.active {
-            color: #F15025;
-            font-weight: bold;
-
-            &:hover {
-                color: #F15025;
-            }
-        }
-
-        &.disabled {
-            color: #CED0CE;
-
-        }
     }
 
+    &.disabled {
+        color: #CED0CE;
+
+    }
 }
 
 .section-header-rm-desktop {
-    height: 698px;
+
+
     background: #FFFFFF;
-}
+    padding: 0px;
+    margin: 0px;
 
-h1 {
-    &.text-rm-desktop {
-        font-family: Source Sans Pro;
-        font-size: 49px;
-        font-weight: 600;
+    .header-name {
+        margin: 301px 0px 0px 0px;
+        padding: 0px 0px 0px 40px;
+
+        .button-header-name {
+            display: flex;
+            align-items: center;
+
+            .button-items {
+                display: flex;
+                align-items: center;
+
+                .button-icon {
+                    padding-bottom: 0px;
+                    margin-right: 8px;
+                    font-size: 25px;
+                    line-height: 0px;
+                }
+            }
+
+            .button-social-media {
+                text-decoration: none;
+
+                @extend h3;
+                padding: 0px;
+                margin: 0px 5px 0px 0px;
+
+                &:hover {
+                    color: #F15025;
+                }
+            }
+        }
     }
 
-    &.text-rm-mobile {
-        font-family: Source Sans Pro;
-        font-size: 29px;
-        font-weight: 600;
-    }
-}
+    .header-photo {
 
-h2 {
-    &.text-rm-desktop {
-        font-family: Source Sans Pro;
-        font-size: 39px;
-        font-weight: 600;
+        img {
+            margin-top: 60px;
+            max-height: 600px;
+        }
     }
 
-    &.text-rm-mobile {
-        font-family: Source Sans Pro;
-        font-size: 26px;
-        font-weight: 600;
-    }
-
-}
-
-h3 {
-    &.text-rm-desktop {
-        font-family: Source Sans Pro;
-        font-size: 31px;
-        font-weight: 600;
-    }
-
-    &.text-rm-mobile {
-        font-family: Source Sans Pro;
-        font-size: 23px;
-        font-weight: 600;
-    }
-}
-
-h4 {
-    &.text-rm-desktop {
-        font-family: Source Sans Pro;
-        font-size: 25px;
-        font-weight: 400;
-    }
-
-    &.text-rm-mobile {
-        font-family: Source Sans Pro;
-        font-size: 20px;
-        font-weight: 400;
-    }
-
-}
-
-h5 {
-    &.text-rm-desktop {
-        font-family: Source Sans Pro;
-        font-size: 20px;
-        font-weight: 400;
-    }
-
-    &.text-rm-mobile {
-        font-family: Source Sans Pro;
-        font-size: 18px;
-        font-weight: 400;
-    }
-}
-
-h6 {
-    &.text-rm-desktop {
-        font-family: Source Sans Pro;
-        font-size: 18px;
-        font-weight: 400;
-    }
-
-    &.text-rm-mobile {
-        font-family: Source Sans Pro;
-        font-size: 17px;
-        font-weight: 400;
-    }
-}
-
-p {
-    font-family: Source Sans Pro;
-    font-size: 16px;
-    font-weight: 400;
-}
-
-small {
-    &.text-rm-desktop {
-        font-family: Source Sans Pro;
-        font-size: 13px;
-        font-weight: 400;
-    }
-
-    &.text-rm-mobile {
-        font-family: Source Sans Pro;
-        font-size: 14px;
-        font-weight: 400;
-    }
 }

@@ -5,36 +5,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RafizMomo</title>
-    <link rel="stylesheet" href="/assets/styles/main.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
         href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/styles/main.css">
 </head>
 
 <body>
 
     <!-- navbar RM Desktop-->
-    <nav class="navbar navbar-expand-md bg-white navbar-rm-desktop">
+    <nav class="navbar navbar-expand-md fixed-top bg-white ">
         <div class="container">
             <!-- navbar nav item left-->
-            <div class="navbar-nav mr-auto">
-                <a href="index.html" class="nav-item nav-link active">Home</a>
-                <a href="" class="nav-item nav-link">Portofolio</a>
+            <div class="col-4 d-none d-md-block">
+                <div class="navbar-nav justify-content-start">
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="" class="nav-item nav-link">Portofolio</a>
+                </div>
             </div>
             <!-- navbar nav brand -->
-            <a href="index.html" class="navbar-brand">RAFIZMOMO</a>
-            <!-- navbar nav item right-->
-            <div class="navbar-nav ml-auto">
-                <a href="" class="nav-item nav-link">About</a>
-                <a href="" class="nav-item nav-link">Contact</a>
+            <div class=" col text-center">
+                <a href="index.html" class="navbar-brand mr-0">RAFIZMOMO</a>
             </div>
+
+            <!-- navbar nav item right-->
+            <div class="col-4 d-none d-md-block">
+                <div class="navbar-nav justify-content-end">
+                    <a href="" class="nav-item nav-link">About</a>
+                    <a href="" class="nav-item nav-link">Contact</a>
+                </div>
+            </div>
+
         </div>
     </nav>
 
+    <!-- Mobile Navbar -->
+    <nav class="navbar fixed-bottom bg-white navbar-expand d-md-none">
+        <div class="navbar-nav nav-justified w-100">
+            <a href="index.html" class="nav-item nav-link active"><span class="iconify"
+                    data-icon="ant-design:home-outlined" data-inline="true">Home</span></a>
+            <a href="" class="nav-item nav-link"><span class="iconify" data-icon="ant-design:code-outlined"
+                    data-inline="true">Portofolio</span></a>
+            <a href="" class="nav-item nav-link"><span class="iconify" data-icon="ant-design:idcard-outlined"
+                    data-inline="true">About</span></a>
+            <a href="" class="nav-item nav-link"><span class="iconify" data-icon="ant-design:mail-outlined"
+                    data-inline="true">Contact</span></a>
+        </div>
+    </nav>
 
+    <div class="container">
+        <section class="section-header-rm-desktop">
+            <div class="row">
+
+                <div class=" col-lg-5 header-name">
+                    <h4 class="text-rm-desktop">Hi, Saya</h4>
+                    <h1>Ihsan Alhafiz</h1>
+                    <div class="button-header-name">
+                        <a href="#" class="btn btn-rm-primary mr-3">
+                            <div class="button-items">
+                                <span class="iconify button-icon" data-icon="ant-design:mail-outlined"></span>HIRE
+                                ME
+                            </div>
+                        </a>
+                        <a href="" class="btn button-social-media"> <span class="iconify"
+                                data-icon="ant-design:instagram-outlined" data-inline="true"></span>
+                        </a>
+                        <a href="" class="btn button-social-media"> <span class="iconify"
+                                data-icon="ant-design:github-outlined" data-inline="true"></span>
+                        </a>
+                        <a href="" class="btn button-social-media"> <span class="iconify"
+                                data-icon="ant-design:whats-app-outlined" data-inline="true"></span>
+                        </a>
+                    </div>
+                    <a href="" class="rm-a">Download CV</a>
+                </div>
+
+                <div class="col-lg-7 header-photo align-items-center d-md-block">
+
+                    <img src="/assets/images/rafizmomo-outlined.png" alt="rafizmomo">
+                </div>
+            </div>
+        </section>
+
+        <section class="section-portofolio-rm-desktop">
+
+        </section>
+    </div>
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 </body>
 
