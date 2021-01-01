@@ -42,7 +42,7 @@ a {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 959px) {
     h1 {
         margin-top: 0;
         font-size: 2.488rem;
@@ -70,7 +70,7 @@ a {
     }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 960px) {
     h1 {
         margin-top: 0;
         font-size: 3.052rem;
@@ -103,11 +103,11 @@ a {
 
     border-radius: 0;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 959px) {
         padding: 6px 12px;
     }
 
-    @media screen and (min-width: 769px) {
+    @media screen and (min-width: 960px) {
         padding: 8px 16px;
     }
 
@@ -219,7 +219,32 @@ a {
     margin: 0px;
 
     .header-name {
-        margin: 301px 0px 0px 0px;
+
+        @media screen and (min-width: 960px) {
+            margin: 301px 0px 0px 0px;
+            padding: 0px 0px 0px 40px;
+
+        }
+
+        @media screen and (max-width: 959px) {
+            padding: 70px 0px 70px 40px;
+
+        }
+
+        @media screen and (max-width: 540px) {
+            background-color: #2E2E2E;
+
+            h1,
+            h2,
+            h3,
+            h4,
+            p,
+            small,
+            a {
+                color: #CED0CE;
+            }
+        }
+
         padding: 0px 0px 0px 40px;
 
         .button-header-name {
@@ -256,7 +281,14 @@ a {
 
         img {
             margin-top: 60px;
-            max-height: 600px;
+
+            @media screen and(max-width: 959px) {
+                max-height: 600px;
+            }
+
+            @media screen and(min-width: 960px) {
+                max-height: 600px;
+            }
         }
     }
 
