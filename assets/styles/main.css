@@ -222,7 +222,7 @@ a:hover {
 }
 
 .section-header-rm-desktop .header-name {
-  padding: 0px 0px 0px 40px;
+  padding: 0px 0px 0px 0px;
 }
 
 @media screen and (min-width: 960px) {
@@ -234,7 +234,7 @@ a:hover {
 
 @media screen and (max-width: 959px) {
   .section-header-rm-desktop .header-name {
-    padding: 70px 0px 70px 40px;
+    padding: 40px 0px 20px 40px;
   }
 }
 
@@ -305,5 +305,23 @@ a:hover {
   .section-header-rm-desktop .header-photo img {
     max-height: 600px;
   }
+}
+
+.section-portofolio-rm-desktop {
+  background-color: #2E2E2E;
+  padding: 105px 50px;
+}
+
+.section-portofolio-rm-desktop h2,
+.section-portofolio-rm-desktop p,
+.section-portofolio-rm-desktop .btn {
+  color: #FFFFFF;
+}
+
+.section-portofolio-rm-desktop .header-portofolio {
+  max-height: 633px;
+  max-width: 1211px;
+  margin: 83px 0 48px;
+  background-color: #ffffff;
 }
 /*# sourceMappingURL=main.css.map */

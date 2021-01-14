@@ -227,7 +227,7 @@ a {
         }
 
         @media screen and (max-width: 959px) {
-            padding: 70px 0px 70px 40px;
+            padding: 40px 0px 20px 40px;
 
         }
 
@@ -245,7 +245,7 @@ a {
             }
         }
 
-        padding: 0px 0px 0px 40px;
+        padding: 0px 0px 0px 0px;
 
         .button-header-name {
             display: flex;
@@ -291,5 +291,24 @@ a {
             }
         }
     }
+
+}
+
+.section-portofolio-rm-desktop {
+    background-color: #2E2E2E;
+    padding: 105px 50px;
+
+    h2,
+    p {
+        color: #FFFFFF;
+    }
+
+    .header-portofolio {
+        max-height: 633px;
+        max-width: 1211px;
+        margin: 83px 0 48px;
+        background-color: #ffffff;
+    }
+
 
 }
